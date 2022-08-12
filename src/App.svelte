@@ -1,5 +1,4 @@
 <script lang="ts">
-  import icon from './assets/eurydice.svg';
   import evaluate from 'eurydice/src/evaluate';
   import parse from 'eurydice/src/parse';
   import printValue from 'eurydice/src/print';
@@ -14,7 +13,7 @@
 </script>
 
 <main>
-  <img src={icon} alt="Eurydice icon">
+  <img src="/eurydice.svg" alt="Eurydice icon">
   <h1>Try Eurydice</h1>
   <input type="text" bind:value={expr} autocapitalize="none" autocomplete="none" autocorrect="none">
   <div>{evalString(expr)}</div>
